@@ -9,22 +9,36 @@
         .calender-container {
             display: grid;
             grid-template-columns: repeat(7, 1fr);
+            grid-template-rows: repeat(6, 50px);
             gap: 10px;
-            justify-content: center;
         }
-        .date {
+        .date, .day {
             background-color: rgb(219, 178, 238);
             height: 50px;
-             width: 50px;
+             /* width: 50px; */
             border-radius: 5px;
             display: flex;
             justify-content: center;
             align-items: center; 
+            font-size: 1.5em;
+        }
+        .day {
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+            font-size: 1em;
         }
     </style>
   </head>
   <body>
     <div class="calender-container">
+        <div class="day">Sat</div>
+        <div class="day">Sun</div>
+        <div class="day">Mon</div>
+        <div class="day">Tue</div>
+        <div class="day">Wed</div>
+        <div class="day">Thu</div>
+        <div class="day">Fri</div>
       <div class="date">1</div>
       <div class="date">2</div>
       <div class="date">3</div>
